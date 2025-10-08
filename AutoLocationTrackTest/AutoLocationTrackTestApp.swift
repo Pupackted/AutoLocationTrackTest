@@ -9,24 +9,25 @@ import SwiftUI
 import SwiftData
 
 @main
-struct trackingApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-    let container: ModelContainer
-    
-    init() {
+struct AutoLocationTrackTestApp: App {
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([
+            LocationPoint.self,
+            ActivityEvent.self,
+        ])
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
         do {
-            container = try ModelContainer(for: LocationPoint.self, ActivityEvent.self)
-            AppDelegate.container = container
+            return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
-            fatalError("Failed to create ModelContainer for the app.")
+            fatalError("Could not create ModelContainer: \(error)")
         }
-    }
-    
+    }()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(container)
+        .modelContainer(sharedModelContainer)
     }
 }
