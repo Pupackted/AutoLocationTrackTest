@@ -6,12 +6,27 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
-struct AutoLocationTrackTestApp: App {
+struct trackingApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    let container: ModelContainer
+    
+    init() {
+        do {
+            container = try ModelContainer(for: LocationPoint.self, ActivityEvent.self)
+            AppDelegate.container = container
+        } catch {
+            fatalError("Failed to create ModelContainer for the app.")
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(container)
     }
 }
