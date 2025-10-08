@@ -45,6 +45,11 @@
 			path = AutoLocationTrackTestUITests;
 			sourceTree = "<group>";
 		};
+		7C2143652E96031A0035517E /* HelperViews */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 				7C21433F2E9600270035517E /* AutoLocationTrackTestTests */,
 				7C2143492E9600270035517E /* AutoLocationTrackTestUITests */,
 				7C2143302E9600250035517E /* Products */,
+				7C2143652E96031A0035517E /* HelperViews */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				7C2143312E9600250035517E /* AutoLocationTrackTest */,
+				7C2143652E96031A0035517E /* HelperViews */,
 			);
 			name = AutoLocationTrackTest;
 			packageProductDependencies = (
