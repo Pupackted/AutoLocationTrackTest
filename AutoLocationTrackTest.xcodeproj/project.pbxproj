@@ -29,9 +29,22 @@
 		7C2143462E9600270035517E /* AutoLocationTrackTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLocationTrackTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7C21436D2E960DDD0035517E /* Exceptions for "AutoLocationTrackTest" folder in "AutoLocationTrackTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7C21432E2E9600250035517E /* AutoLocationTrackTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7C2143312E9600250035517E /* AutoLocationTrackTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7C21436D2E960DDD0035517E /* Exceptions for "AutoLocationTrackTest" folder in "AutoLocationTrackTest" target */,
+			);
 			path = AutoLocationTrackTest;
 			sourceTree = "<group>";
 		};
@@ -407,6 +420,8 @@
 				DEVELOPMENT_TEAM = 25C6TYUK25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoLocationTrackTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,6 +454,8 @@
 				DEVELOPMENT_TEAM = 25C6TYUK25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoLocationTrackTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
